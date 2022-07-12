@@ -1,9 +1,10 @@
-# GetTrades
+# ATD
+Automated Trading Daily
 
 ## Description
 This project was made for managing an automated trading daily in an Excel's workbook, it provides 2 main funcionalities for this purpose:
 1. Get all your trades from all your diferent coins in binance and sort the data in a table.
-2. Get the current value of all the coins you've ever traded in order and sort the data in another table. d
+2. Get the current value of all the coins you've ever traded in order and sort the data in another table. 
 
 The purpose this code was created is not only to get all your trades, but also get the binance value of all that coins for you to take a view of your current economical status.
 
