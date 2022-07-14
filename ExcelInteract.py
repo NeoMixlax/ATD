@@ -1,7 +1,7 @@
 import openpyxl as xl 
 from openpyxl.worksheet.table import Table, TableStyleInfo
 
-# Getting the Excel's Workbook
+# Getting the Excel's Workbook with openpyxl
 archivo = xl.load_workbook(r"C:\Users\nicor\OneDrive - UNIVERSIDAD INDUSTRIAL DE SANTANDER\Desktop\Financial\NeoCrypto.xlsx")
 
 def modifyCellValue(row: int, column: int, value, sheet):
@@ -10,10 +10,8 @@ def modifyCellValue(row: int, column: int, value, sheet):
             
 def modifyCellValueDate(row: int, column: int, value, sheet):
     hoja = archivo[sheet]
-    year = value.split("-")[0]
-    monthh = value.split("-")[1]
-    day = value.split("-")[2]
-    hoja.cell(row, column).value = "=DATE({}, {}, {})".format(year, monthh, day)
+    hoja.cell(row, column).value = value
+    hoja.cell(row, column).number_format = "d/mm/yyyy"
 
 def modifyCellValueHour(row: int, column: int, value, sheet):
     hoja = archivo[sheet]
