@@ -68,7 +68,7 @@ ExcelInteract.modifyTable(["B","2"], ["J","{}".format(str(linea-1))], "Órdenes"
 # And place them in our wb
 MatrixToWb.placeMatrix(tradesMatrix)
 
-ExcelInteract.modifyTable(["B","2"], ["J","{}".format(str(len(tradesMatrix)))], "Órdenes", "t_Ordenes")
+ExcelInteract.modifyTable(["B","2"], ["J","{}".format(str(len(tradesMatrix)+2))], "Órdenes", "t_Ordenes")
 ExcelInteract.modifyTable(["I","2"], ["J","{}".format(str(coinsAmount+2))], "Análisis", "t_Precios")
 
 ExcelInteract.saveWb()
